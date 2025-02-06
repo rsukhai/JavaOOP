@@ -22,6 +22,7 @@ public class main {
         else{
             System.out.println((int)d/10);
         }
+        // посилання на гіт до 2.1: https://github.com/rsukhai/JavaOOP
 
 
     }
