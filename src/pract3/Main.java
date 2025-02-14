@@ -2,21 +2,21 @@ package pract3;
 
 public class Main {
     public static void main(String[] args) {
-        classOne one = new classOne(2,2,2);
-        classTwo two = new classTwo(1,2,3);
-        classThree three = new classThree(10,2,5);
+        Storage storage = new Storage("Silpo",1000,"Lviv");
+        Water morshynska = new Water(700,"Morshynska","Morshyn");
+        Alcohol jameson = new Alcohol("jameson",750,"42%");
 
-        one.multiply();
-        System.out.println(one.add());
-        one.printClass(two);
-        System.out.println("-----------------------");
+        storage.printInfo();
+        System.out.println(storage.showAdress());
+        storage.printNameProduct(morshynska);
+        System.out.println("----------------------");
 
-        two.minus();
-        System.out.println(two.showA());
-        System.out.println("-----------------------");
+        morshynska.printInfo();
+        System.out.println(morshynska.mlToOZ());
+        System.out.println("----------------------");
 
-        System.out.println(three.division());
-        three.showC();
+        jameson.printInfo();
+        System.out.println(jameson.whatIsPSU());
 
 
 
